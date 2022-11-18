@@ -1,24 +1,24 @@
 @font-face {
-    font-family: '苹方简体';
-    src: url(fonts/pingfangsc-regular.otf);
-}
-@font-face {
-    font-family: 'Overpass Mono';
-    src: url(fonts/overpass-mono-regular.otf);
-}
-@font-face {
     font-family: '仓耳今楷';
     src: url(fonts/仓耳今楷04-W03.ttf);
+}
+@font-face {
+    font-family: 'OPPOSans';
+    src: url(fonts/OPPOSans-R.ttf);
+}
+@font-face {
+    font-family: 'overpass';
+    src: url(fonts/overpass-light.otf);
 }
 
 :root {
     /* 主色 */
-    --b3-theme-primary: #3573f0;
-    --b3-theme-primary-light: rgba(53, 115, 240, 0.54);
-    --b3-theme-primary-lighter: rgba(53, 115, 240, 0.38);
-    --b3-theme-primary-lightest: rgba(53, 115, 240, 0.12);
+    --b3-theme-primary: rgb(96, 121, 170);
+    --b3-theme-primary-light: rgba(96, 121, 170, 0.54);
+    --b3-theme-primary-lighter: rgba(96, 121, 170, 0.38);
+    --b3-theme-primary-lightest: rgba(96, 121, 170, 0.12);
     --b3-theme-secondary: #f3a92f;
-    --b3-theme-background: #fbfbfb;
+    --b3-theme-background: #fcfcfc;
     --b3-theme-background-light: #dfe0e1;
     --b3-theme-surface: #f5f5f5;
     --b3-theme-surface-light: #f5f5f5db;
@@ -28,17 +28,17 @@
     /* 文字颜色 */
     --b3-theme-on-primary: #fff;
     --b3-theme-on-secondary: #fff;
-    --b3-theme-on-background: #202124;
+    --b3-theme-on-background: #202020;
     --b3-theme-on-surface: #5f6368;
     --b3-theme-on-surface-light: rgba(95, 99, 104, .68);
     --b3-theme-on-error: #fff;
 
-        /* 字体 */
-        --b3-font-family: "quote", "苹方简体", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
-        --b3-font-family-code: "Overpass Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
-        --b3-font-family-graph: mononoki;
-        --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
-        --b3-font-family-math: KaTeX_Math;
+    /* 字体 */
+    --b3-font-family: "overpass", "OPPOSans", "quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+    --b3-font-family-code: "JetBrainsMono-Regular", mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+    --b3-font-family-graph: mononoki;
+    --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
+    --b3-font-family-math: KaTeX_Math;
     
     /* 顶部工具栏 */
     --b3-toolbar-background: #292a2d;
@@ -92,7 +92,7 @@
     --b3-font-background2: var(--b3-card-warning-background);
     --b3-font-background3: var(--b3-card-info-background);
     --b3-font-background4: var(--b3-card-success-background);
-    --b3-font-background5: #e2e3e4;
+    --b3-font-background5: rgb(245, 245, 245);
     --b3-font-background6: #acd0fc;
     --b3-font-background7: #fdeed6;
     --b3-font-background8: rgba(255, 193, 153, 0.5);
@@ -177,248 +177,251 @@
 
 
 
-/* 标题及大纲 */
 
-    /* 标题颜色和字体 */
-    :root {
-        --h1-list-graphic: #5b6481;
-        --h2-list-graphic: #bf5353;
-        --h3-list-graphic: #547a97;
-        --h4-list-graphic: #756969;
-        --h5-list-graphic: #6d7568;
-        --h6-list-graphic: #a99696;
-    }
+/* 标题颜色和字体 */
+:root {
+    --h1-list-graphic: #5b6481;
+    --h2-list-graphic: #bf5353;
+    --h3-list-graphic: #547a97;
+    --h4-list-graphic: #756969;
+    --h5-list-graphic: #6d7568;
+    --h6-list-graphic: #a99696;
+}
 
-    /* 标题样式 */
-    .protyle-wysiwyg [data-node-id].h1, .b3-typography h1{
-        text-align: center;
-        font-size: 1.4em;
-        color: var(--h1-list-graphic);
-        padding: 0;
-        border-bottom: 1px solid #dfe0e1 !important;
-        margin-top: 25px;
-        margin-bottom: 12px;
-    }
-    .protyle-wysiwyg [data-node-id].h2, .b3-typography h2 {
-        font-size: 1.25em;
-        color: var(--h2-list-graphic);
-        margin-top: 12px;
-    }
-    .protyle-wysiwyg [data-node-id].h3, .b3-typography h3 {
-        font-size: 1.15em;
-        color: var(--h3-list-graphic);
-        margin-top: 12px;
-    }
-    .protyle-wysiwyg [data-node-id].h4, .b3-typography h4 {
-        font-size: 1.0em;
-        color: var(--h4-list-graphic);
-        margin-top: 12px;
-        /* text-decoration: underline var(--h4-list-graphic) 5%; */
-    }
-    .protyle-wysiwyg [data-node-id].h5, .b3-typography h5 {
-        font-size: 1em;
-        color: var(--h5-list-graphic);
-    }
-    .protyle-wysiwyg [data-node-id].h6, .b3-typography h6 {
-        font-size: 1em;
-        color: var(--h6-list-graphic);
-    }
-    .h4 div[spellcheck="false"]::after {
-        /* h4 特殊样式 */
-        content: "";
-        position: absolute;
-        display: inline-block;
-        width: -webkit-fill-available;
-        height: 1px;
-        top: 50%;
-        background-color: var(--b3-border-color);
-        margin-left: 10px;
-    }
-    .h4[fold="1"] div[spellcheck="false"]::after {
-        display: none;
-    }
+/* 标题样式 */
+.protyle-wysiwyg [data-node-id].h1, .b3-typography h1{
+    text-align: center;
+    font-size: 1.4em;
+    color: var(--h1-list-graphic);
+    padding: 0;
+    border-bottom: 1px solid #dfe0e1 !important;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+.protyle-wysiwyg [data-node-id].h2, .b3-typography h2 {
+    font-size: 1.25em;
+    color: var(--h2-list-graphic);
+    margin-top: 12px;
+}
+.protyle-wysiwyg [data-node-id].h3, .b3-typography h3 {
+    font-size: 1.15em;
+    color: var(--h3-list-graphic);
+    margin-top: 12px;
+}
+.protyle-wysiwyg [data-node-id].h4, .b3-typography h4 {
+    font-size: 1.0em;
+    color: var(--h4-list-graphic);
+    margin-top: 12px;
+    /* text-decoration: underline var(--h4-list-graphic) 5%; */
+}
+.protyle-wysiwyg [data-node-id].h5, .b3-typography h5 {
+    font-size: 1em;
+    color: var(--h5-list-graphic);
+}
+.protyle-wysiwyg [data-node-id].h6, .b3-typography h6 {
+    font-size: 1em;
+    color: var(--h6-list-graphic);
+}
+.h4 div[spellcheck="false"]::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: -webkit-fill-available;
+    height: 1px;
+    top: 50%;
+    background-color: var(--b3-border-color);
+    margin-left: 10px;
+}
+.h4[fold="1"] div[spellcheck="false"]::after {
+    display: none;
+}
 
-    /* 大纲标题圆点 */
-    #layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h1"] .b3-list-item__toggle::after{
-        content:"";
-        background-color:var(--h1-list-graphic);
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        position:relative;
-        left:10px;
-    }
-    #layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h2"] .b3-list-item__toggle::after{
-        content:"";
-        background-color:var(--h2-list-graphic);
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        position:relative;
-        left:10px;
-    }
-    #layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h3"] .b3-list-item__toggle::after{
-        content:"";
-        background-color:var(--h3-list-graphic);
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        position:relative;
-        left:10px;
-    }
-    #layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h4"] .b3-list-item__toggle::after{
-        content:"";
-        background-color:var(--h4-list-graphic);
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        position:relative;
-        left:10px;
-    }
-    #layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h5"] .b3-list-item__toggle::after{
-        content:"";
-        background-color:var(--h5-list-graphic);
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        position:relative;
-        left:10px;
-    }
-    #layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h6"] .b3-list-item__toggle::after{
-        content:"";
-        background-color:var(--h6-list-graphic);
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        position:relative;
-        left:10px;
-    }
+/* 大纲标题圆点 */
+#layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h1"] .b3-list-item__toggle::after{
+    content:"";
+    background-color:var(--h1-list-graphic);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position:relative;
+    left:10px;
+}
+#layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h2"] .b3-list-item__toggle::after{
+    content:"";
+    background-color:var(--h2-list-graphic);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position:relative;
+    left:10px;
+}
+#layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h3"] .b3-list-item__toggle::after{
+    content:"";
+    background-color:var(--h3-list-graphic);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position:relative;
+    left:10px;
+}
+#layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h4"] .b3-list-item__toggle::after{
+    content:"";
+    background-color:var(--h4-list-graphic);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position:relative;
+    left:10px;
+}
+#layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h5"] .b3-list-item__toggle::after{
+    content:"";
+    background-color:var(--h5-list-graphic);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position:relative;
+    left:10px;
+}
+#layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h6"] .b3-list-item__toggle::after{
+    content:"";
+    background-color:var(--h6-list-graphic);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position:relative;
+    left:10px;
+}
 
-    /* 取消大纲标题前的标志 */
-    .file-tree ul.b3-list.b3-list--background [data-subtype="h1"] svg.b3-list-item__graphic,
-    .file-tree ul.b3-list.b3-list--background [data-subtype="h2"] svg.b3-list-item__graphic,
-    .file-tree ul.b3-list.b3-list--background [data-subtype="h3"] svg.b3-list-item__graphic,
-    .file-tree ul.b3-list.b3-list--background [data-subtype="h4"] svg.b3-list-item__graphic,
-    .file-tree ul.b3-list.b3-list--background [data-subtype="h5"] svg.b3-list-item__graphic,
-    .file-tree ul.b3-list.b3-list--background [data-subtype="h6"] svg.b3-list-item__graphic{
-        margin-left:-10px;
-        margin-right:4px;
-        color:transparent;
-        z-index:2;
-    }
+/* 取消大纲标题前的标志 */
+.file-tree ul.b3-list.b3-list--background [data-subtype="h1"] svg.b3-list-item__graphic,
+.file-tree ul.b3-list.b3-list--background [data-subtype="h2"] svg.b3-list-item__graphic,
+.file-tree ul.b3-list.b3-list--background [data-subtype="h3"] svg.b3-list-item__graphic,
+.file-tree ul.b3-list.b3-list--background [data-subtype="h4"] svg.b3-list-item__graphic,
+.file-tree ul.b3-list.b3-list--background [data-subtype="h5"] svg.b3-list-item__graphic,
+.file-tree ul.b3-list.b3-list--background [data-subtype="h6"] svg.b3-list-item__graphic{
+    margin-left:-10px;
+    margin-right:4px;
+    color:transparent;
+    z-index:2;
+}
 
-/* 标题及大纲 完 */
+/* 下划线 */
+.b3-typography u, 
+.b3-typography span[data-type~=u], 
+.protyle-wysiwyg u, 
+.protyle-wysiwyg span[data-type~=u] {
+    color: inherit;
+    border-bottom-color: inherit;
+    border-bottom: 1px solid
+}
 
+/* 斜体 */
+.b3-typography em, 
+.b3-typography span[data-type~=em], 
+.protyle-wysiwyg em, 
+.protyle-wysiwyg span[data-type~=em] {
+    color: inherit;
+    font-style: italic;
+}
 
-/* 编辑器正文 */
+/* 删除线 */
+.b3-typography s, 
+.b3-typography span[data-type~=s], 
+.protyle-wysiwyg s, 
+.protyle-wysiwyg span[data-type~=s] {
+    color: inherit;
+    text-decoration: line-through;
+}
 
-    /* 标亮 */
-    .b3-typography mark, 
-    .b3-typography span[data-type~=mark], 
-    .protyle-wysiwyg mark, 
-    .protyle-wysiwyg span[data-type~=mark] {
-        color: inherit;
-        /* border-bottom: 1.2px solid #f2e1c3; */
-        background-color: transparent;
-        background-image: linear-gradient(transparent, transparent, #fceed6 80%, #fceed6 100%)
-    }
+/* 粗体 */
+.b3-typography strong, 
+.b3-typography span[data-type~=strong], 
+.protyle-wysiwyg strong, 
+.protyle-wysiwyg span[data-type~=strong] {
+    color: inherit;
+    font-weight: bold;
+}
+
+/* 标亮 */
+.b3-typography mark, 
+.b3-typography span[data-type~=mark], 
+.protyle-wysiwyg mark, 
+.protyle-wysiwyg span[data-type~=mark] {
+    color: inherit;
+    background-color: transparent;
+    background-image: linear-gradient(transparent 20%, #f7ebd6 10%, #f7ebd6 100%,transparent 20%);
+}
+
+/* 引述块 */
+.b3-typography blockquote, 
+.b3-typography .bq, 
+.protyle-wysiwyg blockquote, 
+.protyle-wysiwyg .bq {
+    border-left: .2em solid #DDDDDD;
+    background-color: transparent;
+    padding-left: 0px;
+    margin-left: 8px;
+    font-family: "quote", "仓耳今楷", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+}  
+
+/* 公式块 */
+.katex .katex-html > .newline {
+    padding-bottom: 0.5em;
+}
+
+/* 嵌入块 */
+.protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed] {
+    background-color: var(--b3-theme-background);
+    box-shadow: 0px 0px 4px 1px rgb(135 148 186 / 38%);
+    border-left: 0px dashed #dfe0e1;
+}
     
-    /* 下划线 */
-    .b3-typography u, 
-    .b3-typography span[data-type~=u], 
-    .protyle-wysiwyg u, 
-    .protyle-wysiwyg span[data-type~=u] {
-        color: inherit;
-        border-bottom-color: inherit;
-    }
+/* 标签样式 */
+.protyle-wysiwyg span[data-type='tag'] {
+    font-size: 85%;
+    border-radius: 0.5em;
+    padding: 4px 6px;
+    color: var(--b3-protyle-inline-tag-text-color)  !important;
+    border-bottom: none !important;
+    background-color: #fbf3db;
+}
 
-    /* 斜体 */
-    .b3-typography em, 
-    .b3-typography span[data-type~=em], 
-    .protyle-wysiwyg em, 
-    .protyle-wysiwyg span[data-type~=em] {
-        color: inherit;
-        font-style: italic;
-    }
+/* 右侧滑杆 */
+.protyle-scroll .b3-slider {
+    width: 200px; /* 默认为200 */
+    border-radius: 2px;
+    height: 10px;
+    background-color: rgba(0,0,0,0);
+    padding: 0 4px;
+}
 
-    /* 删除线 */
-    .b3-typography s, 
-    .b3-typography span[data-type~=s], 
-    .protyle-wysiwyg s, 
-    .protyle-wysiwyg span[data-type~=s] {
-        color: inherit;
-        text-decoration: line-through;
-    }
+/* 表格表头 */
+.b3-typography table td, 
+.b3-typography table th, 
+.protyle-wysiwyg table td, 
+.protyle-wysiwyg table th {
+    background: #FEFEFE;
+}
+.b3-typography table thead th, 
+.b3-typography table thead td, 
+.protyle-wysiwyg table thead th, 
+.protyle-wysiwyg table thead td {
+    font-weight: inherit;
+}
 
-    /* 粗体 */
-    .b3-typography strong, 
-    .b3-typography span[data-type~=strong], 
-    .protyle-wysiwyg strong, 
-    .protyle-wysiwyg span[data-type~=strong] {
-        color: inherit;
-    }
-
-    /* 引述块 */
-    .b3-typography blockquote, 
-    .b3-typography .bq, 
-    .protyle-wysiwyg blockquote, 
-    .protyle-wysiwyg .bq {
-        border-left: .25em solid #DDDDDD;
-        background-color: transparent;
-        padding: 0px;
-        margin-left: 8px;
-        font-family: "quote", "仓耳今楷", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
-    }  
-
-    /* 公式块 */
-    .katex .katex-html > .newline {
-        padding-bottom: 0.5em;
-    }
-    
-    /* 标签样式 */
-    .protyle-wysiwyg span[data-type='tag'] {
-        font-size: 85%;
-        border-radius: 0.5em;
-        padding: 4px 6px;
-        color: var(--b3-protyle-inline-tag-text-color)  !important;
-        border-bottom: none !important;
-        background-color: #fbf3db;
-    }
-
-    /* 右侧滑杆 */
-    .protyle-scroll .b3-slider {
-        width: 0px; /* 默认为200 */
-    }
-
-    /* 表格表头 */
-    .b3-typography table td, 
-    .b3-typography table th, 
-    .protyle-wysiwyg table td, 
-    .protyle-wysiwyg table th {
-        background: #FEFEFE;
-    }
-    .b3-typography table thead th, 
-    .b3-typography table thead td, 
-    .protyle-wysiwyg table thead th, 
-    .protyle-wysiwyg table thead td {
-        font-weight: inherit;
-    }
-
-    /* 排版两边对齐 */
-    :root{
-        text-align: justify;
-    }
-
-/* 编辑器正文 完 */
+/* 光标选择文本 */
+.protyle-wysiwyg ::selection{ 
+    background-color:#96cfae71;
+}
 
 
 /* 搜索窗口 (Ctrl+P) */
-/* 依据abbj大大的修改 */
 
-  :root {
-    --b3-protyle-inline-mark-background: #97cfae97;
+    /* 依据abbj大大的修改 */
+    :root {
+        --b3-protyle-inline-mark-background: #96cfae71;
     }
-    
+
     /* 窗口尺寸 */
     div[data-key] .b3-dialog__container .fn__flex-column {
         height: 75vh !important;
@@ -473,3 +476,4 @@
             height: calc(60%) !important;
         }
     }
+/* 搜索窗口 (Ctrl+P) 完*/
