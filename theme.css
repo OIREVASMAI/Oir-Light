@@ -244,7 +244,7 @@
     height: 8px;
     border-radius: 50%;
     position:relative;
-    left:10px;
+    left:15px;
 }
 #layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h2"] .b3-list-item__toggle::after{
     content:"";
@@ -253,7 +253,7 @@
     height: 8px;
     border-radius: 50%;
     position:relative;
-    left:10px;
+    left:15px;
 }
 #layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h3"] .b3-list-item__toggle::after{
     content:"";
@@ -262,7 +262,7 @@
     height: 8px;
     border-radius: 50%;
     position:relative;
-    left:10px;
+    left:15px;
 }
 #layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h4"] .b3-list-item__toggle::after{
     content:"";
@@ -271,7 +271,7 @@
     height: 8px;
     border-radius: 50%;
     position:relative;
-    left:10px;
+    left:15px;
 }
 #layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h5"] .b3-list-item__toggle::after{
     content:"";
@@ -280,7 +280,7 @@
     height: 8px;
     border-radius: 50%;
     position:relative;
-    left:10px;
+    left:15px;
 }
 #layouts .file-tree ul.b3-list.b3-list--background [data-subtype="h6"] .b3-list-item__toggle::after{
     content:"";
@@ -289,7 +289,7 @@
     height: 8px;
     border-radius: 50%;
     position:relative;
-    left:10px;
+    left:15px;
 }
 
 /* 取消大纲标题前的标志 */
@@ -299,8 +299,8 @@
 .file-tree ul.b3-list.b3-list--background [data-subtype="h4"] svg.b3-list-item__graphic,
 .file-tree ul.b3-list.b3-list--background [data-subtype="h5"] svg.b3-list-item__graphic,
 .file-tree ul.b3-list.b3-list--background [data-subtype="h6"] svg.b3-list-item__graphic{
-    margin-left:-10px;
-    margin-right:4px;
+    margin-left:0px;
+    margin-right:0px;
     color:transparent;
     z-index:2;
 }
